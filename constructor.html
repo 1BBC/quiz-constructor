@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/constructor.css">
+    <title>Quiz Constructor</title>
+</head>
+<body>
+	<div class="question-box drag-place">
+        <div class="question-box-top">
+			<input value="Quiz Name" type="text" id="test-name">
+            <a href="#" role="button" id="show-dialog">JSON</a>
+        </div>
+
+		<!--place for questions-->
+
+		<div class="question-box-bottom">
+			<input value="+" type="button" name="question-add">
+		</div>
+
+	</div>
+
+	<div id="json-block">
+		<textarea id="json" rows="10" name="text"></textarea>
+		<div class="json-options">
+			<input value="OK" type="button" id="json-ok">
+			<input value="COPY" type="button" id="json-copy">
+		</div>
+	</div>
+
+	<div class="add-templates" style="display: none;">
+
+		<div class="question drag-target">
+			<div class="question-top">
+				<div class="draggable" onmousedown="dragTargetDrag(this)">⋮⋮⋮</div>
+				<input type="text" name="question" value="question1">
+				<input value="del" type="button" name="question-del">
+			</div>
+
+			<div class="answer-box drag-place">
+				<div class="answer drag-target">
+					<div class="correct" data-correct=false style="background: red"></div>
+					<div class="draggable" onmousedown="dragTargetDrag(this)">⋮⋮⋮</div>
+					<input type="text" name="answer" value="answer1">
+					<input value="del" type="button" name="answer-del">
+				</div>
+
+				<div class="answer drag-target">
+					<div class="correct" data-correct=true style="background: green"></div>
+					<div class="draggable" onmousedown="dragTargetDrag(this)">⋮⋮⋮</div>
+					<input type="text" name="answer" value="answer2">
+					<input value="del" type="button" name="answer-del">
+				</div>
+
+				<div class="answer-box-bottom">
+					<input value="+" type="button" name="answer-add">
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<script src="js/constructor.js"></script>
+
+</html>

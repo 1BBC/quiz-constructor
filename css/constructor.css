@@ -1,0 +1,199 @@
+/**,*/
+/**:before,*/
+/**:after {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.question-box {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 600px;
+    border: 3px black solid;
+    /*min-height: 400px;*/
+}
+
+.question-box-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-box-top a {
+    padding-top: 13px;
+}
+
+.question-box-top #test-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    outline:none;
+}
+
+.question-box-bottom input[name="question-add"] {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0;
+    border: 1px black solid;
+    cursor: pointer;
+}
+
+.question {
+    /*margin: 10px auto;*/
+    margin-bottom: 10px;
+    border: 1px black solid;
+    overflow: hidden;
+}
+
+.question-top {
+    display: flex;
+}
+
+.question-top input[name="question"] {
+    width: 86%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border: 0 black solid;
+    border-bottom: 1px black solid;
+}
+
+.question-top input[name="question-del"] {
+    width: 10%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0;
+    border: none;
+    border-bottom: 1px black solid;
+    border-left: 1px black solid;
+    cursor: pointer;
+}
+
+.answer-box {
+    padding: 20px 20px 20px 20%;
+}
+
+.answer {
+    border: 1px black solid;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.answer .correct {
+    text-align: center;
+    cursor: pointer;
+    width: 10%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 1px black solid;
+}
+
+.answer .draggable {
+    width: 5%;
+    border-right: 1px black solid;
+    cursor: grab;
+}
+
+.question-top .draggable {
+    width: 4%;
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+}
+
+.draggable {
+    text-align: center;
+    background: #DDDDDD;
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.answer input[name="answer"]{
+    font-family: 'Montserrat', sans-serif;
+    width: 75%;
+}
+
+.answer input[name="answer-del"]{
+    padding: 0;
+    width: 10%;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-left: 1px black solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.answer-box-bottom input[name="answer-add"]{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cover-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.3;
+}
+
+#json-block {
+    background: white;
+    height: 45vh;
+    width: 50vw;
+    z-index: 9999;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding: 10px;
+    border: 3px black solid;
+    position: absolute;
+    display: none;
+}
+
+#json {
+    width: 50vw;
+    height: 39vh;
+    resize: none;
+    overflow-y: scroll;
+    border: 1px black solid;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.json-options {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#json-ok {
+    width: 49%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0;
+    border: 1px black solid;
+    cursor: pointer;
+}
+
+#json-copy {
+    width: 49%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0;
+    border: 1px black solid;
+    cursor: pointer;
+}
