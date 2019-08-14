@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="quiz">
+        <div id="json-box">
+            <textarea id="json" rows="10" name="text" placeholder="JSON from constructor"></textarea>
+            <input value="OK" type="button" id="json-ok" class="btn">
+        </div>
+
+        <div class="result-box" id="result-box" style="display: none">
+            <div class="result-top">
+                <h2>Result:</h2>
+                <h2 id="result"></h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hidden-templates" style="display: none">
+        <div class="question-box">
+            <div class="question">
+                <h2>My question?</h2>
+            </div>
+
+            <div class="answer-box">
+            </div>
+
+            <input value="next" type="button" name="next" class="btn" onclick="onNextClick(this);">
+        </div>
+    </div>
+
+</body>
+
+<script src="js/quiz.js"></script>
+
+</html>

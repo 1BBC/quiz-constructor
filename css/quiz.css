@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+}
+
+.quiz {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 600px;
+    border: 3px black solid;
+}
+
+#json-box {
+
+}
+
+#json {
+    width: 100%;
+    height: 400px;
+    resize: vertical;
+    border: 1px black solid;
+}
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border: 1px black solid;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.question {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.answer {
+    padding: 10px;
+    -webkit-box-shadow: 2px 5px 6px -2px rgba(0,0,0,0.51);
+    -moz-box-shadow: 2px 5px 6px -2px rgba(0,0,0,0.51);
+    box-shadow: 2px 5px 6px -2px rgba(0,0,0,0.51);
+    border: 2px black solid;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.answer:hover {
+    border: 4px gray solid;
+    color: gray;
+}
+
+.result-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-question {
+    border: 2px red solid;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    padding: 10px;
+}
